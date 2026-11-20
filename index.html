@@ -1,0 +1,1466 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ELKIN MORENO | Heavy Haul & Project Cargo LATAM — Consultoría y Formación Técnica</title>
+  <meta name="description" content="Especialista con +20 años de experiencia en transporte, logística y regulación de carga extradimensionada y extrapesada en Colombia y Latinoamérica." />
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts: Inter & Rajdhani (para números técnicos e ingeniería) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: {
+              950: '#060F1D',
+              900: '#0B192C',
+              800: '#132743',
+              700: '#1E3A5F',
+            },
+            steel: {
+              900: '#0F172A',
+              800: '#1E293B',
+              700: '#334155',
+              600: '#475569',
+            },
+            amber: {
+              400: '#FBBF24',
+              500: '#F59E0B',
+              600: '#D97706',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            tech: ['Rajdhani', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Patrón técnico de ingeniería para fondos oscuros */
+    .blueprint-grid {
+      background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+      background-size: 36px 36px;
+    }
+    .hazard-stripe {
+      background: repeating-linear-gradient(
+        -45deg,
+        #F59E0B,
+        #F59E0B 10px,
+        #0B192C 10px,
+        #0B192C 20px
+      );
+    }
+    .glass-card {
+      background: rgba(19, 39, 67, 0.72);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+  </style>
+</head>
+<body class="font-sans text-slate-800 bg-slate-50 antialiased selection:bg-amber-500 selection:text-navy-950">
+
+  <!-- ===================================================================== -->
+  <!-- TOPBAR DE AUTORIDAD Y CONTACTO RÁPIDO                                 -->
+  <!-- ===================================================================== -->
+  <div class="bg-navy-950 text-slate-300 text-xs py-2 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap justify-between items-center gap-2">
+      <div class="flex items-center gap-4">
+        <span class="inline-flex items-center gap-1.5 text-amber-400 font-semibold">
+          <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+          AUTORIDAD TÉCNICA EN HEAVY HAUL & PROJECT CARGO
+        </span>
+        <span class="hidden md:inline text-slate-500">|</span>
+        <span class="hidden md:inline">Colombia • Ecuador • Perú • Chile • Panamá</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="#calculadora" class="hover:text-amber-400 transition font-medium">
+          <i class="fa-solid fa-ruler-combined mr-1 text-amber-500"></i> Simulador Res. 4959
+        </a>
+        <a href="https://www.linkedin.com" target="_blank" rel="noopener" class="hover:text-white transition">
+          <i class="fa-brands fa-linkedin text-sm text-sky-400"></i> Conectar en LinkedIn
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- 1. HEADER & NAVEGACIÓN + IMAGOTIPO DE MARCA                           -->
+  <!-- ===================================================================== -->
+  <header class="sticky top-0 z-40 bg-navy-900/95 backdrop-blur-md border-b border-slate-800 shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        
+        <!-- IMAGOTIPO OFICIAL ELKIN MORENO (ISOTIPO ESTRUCTURAL + LOGOTIPO) -->
+        <a href="#" class="flex items-center gap-3 group focus:outline-none">
+          <!-- Isotipo Vectorial: Escudo Hexagonal de Ingeniería + Monograma EM + Cama Baja Multi-Eje -->
+          <div class="relative flex-shrink-0">
+            <svg width="52" height="52" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" class="transform group-hover:scale-105 transition-transform duration-300">
+              <!-- Marco Hexagonal de Acero -->
+              <path d="M32 3L58 18V46L32 61L6 46V18L32 3Z" fill="#060F1D" stroke="#F59E0B" stroke-width="2.5"/>
+              <path d="M32 7L54 19.8V44.2L32 57L10 44.2V19.8L32 7Z" stroke="#334155" stroke-width="1"/>
+              <!-- Monograma ESTRUCTURAL "EM" -->
+              <path d="M16 21H29V24.5H20V28.5H27.5V32H20V36H29V39.5H16V21Z" fill="#FFFFFF"/>
+              <path d="M32 21H36.2L40.5 29.5L44.8 21H49V39.5H45V27.8L41.4 34.8H39.6L36 27.8V39.5H32V21Z" fill="#F59E0B"/>
+              <!-- Silueta Técnica de Cama Baja Modular / Multi-eje -->
+              <path d="M14 44.5H22L25 46.5H43L46 44.5H50V47H45.5L42.5 49H24.5L21.5 47H14V44.5Z" fill="#F59E0B"/>
+              <!-- Ruedas de Ejes Pesados -->
+              <circle cx="18" cy="49.5" r="2.2" fill="#FFFFFF"/>
+              <circle cx="27" cy="51" r="2" fill="#FFFFFF"/>
+              <circle cx="32.5" cy="51" r="2" fill="#FFFFFF"/>
+              <circle cx="38" cy="51" r="2" fill="#FFFFFF"/>
+              <circle cx="46.5" cy="49.5" r="2.2" fill="#FFFFFF"/>
+            </svg>
+          </div>
+          <!-- Logotipo Tipográfico -->
+          <div class="flex flex-col">
+            <div class="flex items-center gap-1.5">
+              <span class="font-tech font-bold text-2xl sm:text-[26px] tracking-wider text-white leading-none">
+                ELKIN <span class="text-amber-500">MORENO</span>
+              </span>
+            </div>
+            <span class="text-[10px] sm:text-[11px] font-semibold tracking-[0.18em] text-slate-300 uppercase mt-1">
+              Heavy Haul & Project Cargo LATAM
+            </span>
+          </div>
+        </a>
+
+        <!-- Menú Desktop -->
+        <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-slate-300">
+          <a href="#servicios" class="hover:text-amber-400 transition">Servicios B2B</a>
+          <a href="#taller" class="hover:text-amber-400 transition flex items-center gap-1.5">
+            Taller Especializado
+            <span class="bg-amber-500/20 text-amber-400 border border-amber-500/40 text-[10px] px-1.5 py-0.5 rounded font-bold">EN VIVO</span>
+          </a>
+          <a href="#operaciones" class="hover:text-amber-400 transition">Operaciones Reales</a>
+          <a href="#calculadora" class="hover:text-amber-400 transition">Calculadora de Carga</a>
+          <a href="#riesgo" class="hover:text-amber-400 transition">Checklist Gratis</a>
+        </nav>
+
+        <!-- Botón CTA Principal -->
+        <div class="flex items-center gap-3">
+          <button onclick="openBookingModal('Consultoría B2B / Auditoría de Ruta')" class="bg-amber-500 hover:bg-amber-400 text-navy-950 font-bold text-xs sm:text-sm px-4 sm:px-5 py-2.5 rounded-lg shadow-lg shadow-amber-500/20 transition transform hover:-translate-y-0.5 cursor-pointer">
+            <i class="fa-solid fa-helmet-safety mr-1.5"></i> Agendar Consultoría
+          </button>
+          <!-- Botón Menú Móvil -->
+          <button id="mobile-menu-btn" class="lg:hidden text-slate-300 hover:text-white p-2 rounded-lg border border-slate-700" aria-label="Abrir menú">
+            <i class="fa-solid fa-bars text-lg"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menú Desplegable Móvil -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-navy-950 border-t border-slate-800 px-4 pt-3 pb-5 space-y-2">
+      <a href="#servicios" class="block py-2.5 px-3 rounded-lg text-slate-200 hover:bg-navy-800 font-medium">Servicios B2B</a>
+      <a href="#taller" class="block py-2.5 px-3 rounded-lg text-slate-200 hover:bg-navy-800 font-medium">Taller Especializado (En Vivo)</a>
+      <a href="#operaciones" class="block py-2.5 px-3 rounded-lg text-slate-200 hover:bg-navy-800 font-medium">Operaciones Reales en Campo</a>
+      <a href="#calculadora" class="block py-2.5 px-3 rounded-lg text-slate-200 hover:bg-navy-800 font-medium">Simulador Normativo Res. 4959</a>
+      <a href="#riesgo" class="block py-2.5 px-3 rounded-lg text-amber-400 hover:bg-navy-800 font-semibold">Descargar Checklist Gratis</a>
+    </div>
+  </header>
+
+  <!-- ===================================================================== -->
+  <!-- 2. HERO SECTION DE AUTORIDAD EJECUTIVA E INDUSTRIAL                   -->
+  <!-- ===================================================================== -->
+  <section class="relative bg-navy-900 blueprint-grid text-white overflow-hidden">
+    <!-- Franja de advertencia industrial superior sutil -->
+    <div class="h-1.5 w-full hazard-stripe opacity-90"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 lg:py-20">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+        
+        <!-- Columna Izquierda: Propuesta de Valor & CTAs -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/15 border border-amber-500/40 text-amber-400 text-xs sm:text-sm font-semibold">
+            <i class="fa-solid fa-shield-halved"></i>
+            <span>+20 Años Liderando Operaciones Críticas en Colombia y LATAM</span>
+          </div>
+
+          <h1 class="text-3xl sm:text-4xl lg:text-[46px] font-extrabold tracking-tight leading-[1.12] text-white">
+            Ingeniería, Regulación y Control Total en Transporte de <span class="text-amber-500">Carga Extradimensionada y Extrapesada</span> en Colombia y LATAM
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl">
+            En carga crítica, un error en papel se paga carísimo en carretera. Ayudo a empresas transportadoras, generadores de carga y proyectos EPC a ejecutar maniobras de alta complejidad <strong class="text-white">sin siniestros, sin multas ni sobrecostos ocultos</strong> mediante consultoría técnica y formación especializada.
+          </p>
+
+          <!-- Botones Duales de Conversión -->
+          <div class="flex flex-col sm:flex-row gap-4 pt-2">
+            <button onclick="openBookingModal('Auditoría / Cotización Proyecto B2B')" class="bg-amber-500 hover:bg-amber-400 text-navy-950 font-extrabold text-sm sm:text-base px-6 py-4 rounded-xl shadow-xl shadow-amber-500/25 transition transform hover:-translate-y-0.5 flex items-center justify-center gap-2 cursor-pointer">
+              <i class="fa-solid fa-file-signature"></i>
+              <span>Solicitar Auditoría / Cotización B2B</span>
+            </button>
+
+            <a href="#taller" class="bg-navy-800 hover:bg-navy-700 text-white border border-slate-600 hover:border-amber-500/60 font-bold text-sm sm:text-base px-6 py-4 rounded-xl transition flex items-center justify-center gap-2">
+              <i class="fa-solid fa-graduation-cap text-amber-400"></i>
+              <span>Inscribirme al Taller en Vivo — $67 USD</span>
+            </a>
+          </div>
+
+          <!-- Métricas de Autoridad en Campo -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6 border-t border-slate-800">
+            <div class="bg-navy-950/60 p-3.5 rounded-xl border border-slate-800">
+              <div class="font-tech text-2xl sm:text-3xl font-bold text-amber-500">+20 Años</div>
+              <div class="text-xs text-slate-400 mt-0.5">Experiencia directiva y en carretera</div>
+            </div>
+            <div class="bg-navy-950/60 p-3.5 rounded-xl border border-slate-800">
+              <div class="font-tech text-2xl sm:text-3xl font-bold text-white">+1.500</div>
+              <div class="text-xs text-slate-400 mt-0.5">Operaciones críticas auditadas</div>
+            </div>
+            <div class="bg-navy-950/60 p-3.5 rounded-xl border border-slate-800">
+              <div class="font-tech text-2xl sm:text-3xl font-bold text-amber-500">LATAM</div>
+              <div class="text-xs text-slate-400 mt-0.5">Colombia y corredores andinos</div>
+            </div>
+            <div class="bg-navy-950/60 p-3.5 rounded-xl border border-slate-800">
+              <div class="font-tech text-2xl sm:text-3xl font-bold text-emerald-400">0%</div>
+              <div class="text-xs text-slate-400 mt-0.5">Improvisación normativa vial</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Columna Derecha: Collage Fotográfico Real de Campo -->
+        <div class="lg:col-span-5">
+          <div class="relative rounded-2xl overflow-hidden border-2 border-slate-700 shadow-2xl bg-navy-950">
+            <!-- Imagen Principal Hero: Camión Minero Sandvik sobre Cama Baja -->
+            <img 
+              src="images/21234901-de86-4eef-bc4b-f1a2397f3f89.jpg" 
+              onerror="this.src='https://placehold.co/800x600/0B192C/F59E0B?text=Operacion+Heavy+Haul+Colombia'"
+              alt="Transporte de camión articulado minero Sandvik sobre cama baja de 4 ejes" 
+              class="w-full h-72 sm:h-80 object-cover"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/20 to-transparent"></div>
+            
+            <!-- Etiqueta flotante de operación real -->
+            <div class="absolute top-3 left-3 bg-navy-950/90 backdrop-blur-md border border-amber-500/50 text-white text-xs px-3 py-1.5 rounded-lg flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-amber-500"></span>
+              <span class="font-semibold">OPERACIÓN REAL • EQUIPOS MINEROS & PORTUARIOS</span>
+            </div>
+
+            <!-- Grid inferior con 2 fotos reales de supervisión y escolta -->
+            <div class="p-4 bg-navy-950 grid grid-cols-2 gap-3 border-t border-slate-800">
+              <div class="relative rounded-xl overflow-hidden border border-slate-700 group">
+                <img 
+                  src="images/27c2ba22-369c-4bae-8697-335c39e4b38d.jpg" 
+                  onerror="this.src='https://placehold.co/400x260/1E293B/FFFFFF?text=Elkin+Moreno+En+Campo'"
+                  alt="Elkin Moreno supervisando convoy de carga extradimensionada en carretera" 
+                  class="w-full h-28 object-cover group-hover:scale-105 transition duration-300"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-navy-950/90 via-transparent to-transparent flex items-end p-2">
+                  <span class="text-[11px] font-bold text-amber-400 leading-tight">Supervisión Directa en Ruta</span>
+                </div>
+              </div>
+              <div class="relative rounded-xl overflow-hidden border border-slate-700 group">
+                <img 
+                  src="images/0c28f2c3-f3e4-46bb-abce-31e8dc68e868.jpg" 
+                  onerror="this.src='https://placehold.co/400x260/1E293B/FFFFFF?text=Maniobra+Portuaria+Grua'"
+                  alt="Transporte de grúa sobre orugas Link-Belt en terminal portuaria" 
+                  class="w-full h-28 object-cover group-hover:scale-105 transition duration-300"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-navy-950/90 via-transparent to-transparent flex items-end p-2">
+                  <span class="text-[11px] font-bold text-white leading-tight">Maniobras Portuarias & Grúas</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- IDENTIDAD DE MARCA & AUTORIDAD PROFESIONAL (ELKIN MORENO)             -->
+  <!-- ===================================================================== -->
+  <section class="py-12 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-slate-900 rounded-2xl p-6 sm:p-10 text-white shadow-xl border border-slate-800 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div class="lg:col-span-4 flex flex-col items-center text-center border-b lg:border-b-0 lg:border-r border-slate-800 pb-6 lg:pb-0 lg:pr-8">
+          <div class="relative w-36 h-36 rounded-2xl overflow-hidden border-2 border-amber-500 shadow-lg mb-4">
+            <img 
+              src="images/elkinmoreno.jpg" 
+              onerror="this.src='https://placehold.co/300x300/0B192C/F59E0B?text=Elkin+Moreno'"
+              alt="Elkin Moreno - Especialista en Carga Extradimensionada" 
+              class="w-full h-full object-cover object-top"
+            />
+          </div>
+          <h2 class="font-tech text-2xl font-bold tracking-wide text-white">ELKIN MORENO</h2>
+          <p class="text-xs font-semibold uppercase tracking-widest text-amber-400 mt-1">Especialista Heavy Haul & Regulación Vial</p>
+          <div class="mt-4 flex gap-2">
+            <span class="px-2.5 py-1 bg-navy-800 rounded text-[11px] text-slate-300 border border-slate-700">Res. 4959 MinTransporte</span>
+            <span class="px-2.5 py-1 bg-navy-800 rounded text-[11px] text-slate-300 border border-slate-700">Invías / ANI</span>
+          </div>
+        </div>
+
+        <div class="lg:col-span-8 space-y-4">
+          <div class="inline-block text-xs font-bold uppercase tracking-wider text-amber-500">Trayectoria Comprobada en Terreno</div>
+          <h3 class="text-2xl sm:text-3xl font-bold text-white leading-snug">
+            Más de dos décadas resolviendo los retos más complejos del transporte pesado en la topografía andina y portuaria
+          </h3>
+          <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+            Desde puertos en el Caribe y el Pacífico hasta corredores críticos como la Variante Ibagué–Armenia y proyectos energéticos, petroleros y mineros en Latinoamérica. Mi metodología combina <strong class="text-white">rigor normativo, ingeniería de configuración vehicular y control financiero del flete</strong> para que cada operación llegue intacta y rentable.
+          </p>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2 text-xs sm:text-sm">
+            <div class="flex items-center gap-2.5 text-slate-200">
+              <i class="fa-solid fa-circle-check text-amber-500"></i>
+              <span>Estudios de Ruta (Route Surveys)</span>
+            </div>
+            <div class="flex items-center gap-2.5 text-slate-200">
+              <i class="fa-solid fa-circle-check text-amber-500"></i>
+              <span>Trincaje y Distribución de Ejes</span>
+            </div>
+            <div class="flex items-center gap-2.5 text-slate-200">
+              <i class="fa-solid fa-circle-check text-amber-500"></i>
+              <span>Estructuración de Costos y Tarifas</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 3. HERRAMIENTA INTERACTIVA LEAD-MAGNET: SIMULADOR NORMATIVO RES. 4959 -->
+  <!-- ===================================================================== -->
+  <section id="calculadora" class="py-16 lg:py-20 bg-slate-100 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-navy-900 text-amber-400 text-xs font-bold uppercase tracking-wider mb-3">
+          <i class="fa-solid fa-calculator"></i> Herramienta Técnica Gratuita
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-navy-900">
+          Simulador Rápido de Clasificación y Requisitos Normativos
+        </h2>
+        <p class="text-slate-600 mt-3 text-base">
+          Ingresa las dimensiones totales del conjunto (vehículo + carga) y el peso bruto vehicular para obtener un pre-diagnóstico basado en criterios de la <strong class="text-navy-900">Resolución 4959 (MinTransporte Colombia)</strong> y estándares regionales LATAM.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden grid grid-cols-1 lg:grid-cols-12">
+        
+        <!-- Panel de Entradas (Inputs) -->
+        <div class="lg:col-span-6 p-6 sm:p-8 bg-white space-y-6 border-b lg:border-b-0 lg:border-r border-slate-200">
+          <div class="flex items-center justify-between border-b border-slate-100 pb-4">
+            <h3 class="font-bold text-lg text-navy-900 flex items-center gap-2">
+              <i class="fa-solid fa-sliders text-amber-500"></i> Parámetros del Conjunto Vehicular
+            </h3>
+            <button onclick="resetSimulator()" class="text-xs text-slate-500 hover:text-navy-900 underline cursor-pointer">
+              Restablecer valores
+            </button>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <!-- Largo Total -->
+            <div>
+              <label for="sim-length" class="block text-xs font-bold uppercase text-slate-700 mb-1.5">
+                Largo Total (metros)
+              </label>
+              <div class="relative">
+                <input type="number" id="sim-length" step="0.1" min="5" max="60" value="22.5" oninput="calculateCargoClass()" class="w-full rounded-xl border border-slate-300 px-4 py-3 text-navy-900 font-tech font-bold text-xl focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 outline-none" />
+                <span class="absolute right-3.5 top-3.5 text-xs font-bold text-slate-400">m</span>
+              </div>
+              <p class="text-[11px] text-slate-500 mt-1">Límite estándar articulado: 18.50 m</p>
+            </div>
+
+            <!-- Ancho Total -->
+            <div>
+              <label for="sim-width" class="block text-xs font-bold uppercase text-slate-700 mb-1.5">
+                Ancho Máximo (metros)
+              </label>
+              <div class="relative">
+                <input type="number" id="sim-width" step="0.1" min="2" max="12" value="3.4" oninput="calculateCargoClass()" class="w-full rounded-xl border border-slate-300 px-4 py-3 text-navy-900 font-tech font-bold text-xl focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 outline-none" />
+                <span class="absolute right-3.5 top-3.5 text-xs font-bold text-slate-400">m</span>
+              </div>
+              <p class="text-[11px] text-slate-500 mt-1">Límite estándar nacional: 2.60 m</p>
+            </div>
+
+            <!-- Alto Total -->
+            <div>
+              <label for="sim-height" class="block text-xs font-bold uppercase text-slate-700 mb-1.5">
+                Alto Total desde Piso (m)
+              </label>
+              <div class="relative">
+                <input type="number" id="sim-height" step="0.1" min="2" max="10" value="4.5" oninput="calculateCargoClass()" class="w-full rounded-xl border border-slate-300 px-4 py-3 text-navy-900 font-tech font-bold text-xl focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 outline-none" />
+                <span class="absolute right-3.5 top-3.5 text-xs font-bold text-slate-400">m</span>
+              </div>
+              <p class="text-[11px] text-slate-500 mt-1">Límite estándar nacional: 4.40 m</p>
+            </div>
+
+            <!-- Peso Bruto Vehicular -->
+            <div>
+              <label for="sim-weight" class="block text-xs font-bold uppercase text-slate-700 mb-1.5">
+                Peso Bruto Vehicular (Ton)
+              </label>
+              <div class="relative">
+                <input type="number" id="sim-weight" step="1" min="10" max="300" value="58" oninput="calculateCargoClass()" class="w-full rounded-xl border border-slate-300 px-4 py-3 text-navy-900 font-tech font-bold text-xl focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 outline-none" />
+                <span class="absolute right-3.5 top-3.5 text-xs font-bold text-slate-400">Ton</span>
+              </div>
+              <p class="text-[11px] text-slate-500 mt-1">Límite estándar 3S3: 52.0 Ton</p>
+            </div>
+          </div>
+
+          <!-- Tipo de Carga -->
+          <div>
+            <label for="sim-indivisible" class="block text-xs font-bold uppercase text-slate-700 mb-1.5">
+              Naturaleza de la Carga
+            </label>
+            <select id="sim-indivisible" onchange="calculateCargoClass()" class="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm font-semibold text-navy-900 bg-slate-50 focus:border-amber-500 outline-none">
+              <option value="yes">Carga Indivisible (Maquinaria, transformador, estructura, grúa)</option>
+              <option value="no">Carga Divisible (Mercancía fraccionable / varios bultos)</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Panel de Diagnóstico Instantáneo (Output) -->
+        <div class="lg:col-span-6 p-6 sm:p-8 bg-navy-900 text-white flex flex-col justify-between space-y-6">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-bold uppercase tracking-wider text-slate-400">Resultado del Pre-Diagnóstico</span>
+              <span id="sim-badge" class="px-3 py-1 rounded-full text-xs font-extrabold bg-amber-500 text-navy-950">
+                EXTRADIMENSIONADA + EXTRAPESADA
+              </span>
+            </div>
+
+            <h4 id="sim-title" class="text-2xl font-extrabold text-white mb-4">
+              Requiere Permiso Especial Invías / ANI y Plan de Manejo de Tránsito
+            </h4>
+
+            <div class="space-y-3 bg-navy-950/70 p-4 rounded-xl border border-slate-800 text-sm">
+              <div class="flex items-start gap-3">
+                <i class="fa-solid fa-car-side text-amber-400 mt-1"></i>
+                <div>
+                  <span class="text-slate-400 block text-xs">Vehículos Escolta Requeridos:</span>
+                  <strong id="sim-escorts" class="text-white">2 Vehículos Escolta (1 adelante + 1 atrás) con aviso "PELIGRO CARGA LARGA Y ANCHA"</strong>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <i class="fa-solid fa-file-contract text-amber-400 mt-1"></i>
+                <div>
+                  <span class="text-slate-400 block text-xs">Trámite y Regulación Aplicable:</span>
+                  <strong id="sim-permits" class="text-white">Permiso electrónico o estudio técnico ante Invías / Concesiones ANI + Póliza RCE + Estudio de Puentes (>52 Ton).</strong>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <i class="fa-solid fa-triangle-exclamation text-amber-400 mt-1"></i>
+                <div>
+                  <span class="text-slate-400 block text-xs">Alerta Crítica en Ruta:</span>
+                  <span id="sim-alert" class="text-slate-200">Verificar gálibos verticales en puentes y redes aéreas (4.50 m) y radios de giro en curvas cerradas.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Conversión Directa desde el Simulador -->
+          <div class="pt-2">
+            <button onclick="sendSimulatorLead()" class="w-full bg-amber-500 hover:bg-amber-400 text-navy-950 font-extrabold py-3.5 px-5 rounded-xl shadow-lg transition flex items-center justify-center gap-2 cursor-pointer">
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+              <span>Validar esta Operación con Elkin Moreno</span>
+            </button>
+            <p class="text-[11px] text-slate-400 text-center mt-2">
+              *Pre-diagnóstico orientativo. Cada corredor vial requiere verificación de obras de arte y restricciones horarias.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 4. EVIDENCIA EN CAMPO: GALERÍA FILTRABLE DE OPERACIONES REALES        -->
+  <!-- ===================================================================== -->
+  <section id="operaciones" class="py-16 lg:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
+        <div>
+          <span class="text-xs font-extrabold uppercase tracking-widest text-amber-600">Trayectoria Real en Terreno</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-navy-900 mt-1">
+            Evidencia en Campo: Operaciones Reales en Colombia y LATAM
+          </h2>
+          <p class="text-slate-600 mt-2 max-w-2xl">
+            No hablamos desde un escritorio. Estas son maniobras reales de carga extradimensionada, extrapesada, izajes portuarios y escoltas viales coordinadas en los principales corredores de la región.
+          </p>
+        </div>
+
+        <!-- Filtros de Categoría -->
+        <div class="flex flex-wrap gap-2" id="gallery-filters">
+          <button onclick="filterGallery('all', this)" class="filter-btn active px-4 py-2 rounded-lg text-xs font-bold bg-navy-900 text-white transition cursor-pointer">
+            Todas (6)
+          </button>
+          <button onclick="filterGallery('mineria', this)" class="filter-btn px-4 py-2 rounded-lg text-xs font-bold bg-slate-100 text-slate-700 hover:bg-slate-200 transition cursor-pointer">
+            Minería & Oil/Gas
+          </button>
+          <button onclick="filterGallery('puertos', this)" class="filter-btn px-4 py-2 rounded-lg text-xs font-bold bg-slate-100 text-slate-700 hover:bg-slate-200 transition cursor-pointer">
+            Puertos & Grúas
+          </button>
+          <button onclick="filterGallery('ruta', this)" class="filter-btn px-4 py-2 rounded-lg text-xs font-bold bg-slate-100 text-slate-700 hover:bg-slate-200 transition cursor-pointer">
+            Escolta & Ruta Crítica
+          </button>
+        </div>
+      </div>
+
+      <!-- Grid de Operaciones Reales -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7" id="gallery-grid">
+        
+        <!-- Card 1: Camión Minero Sandvik -->
+        <article class="gallery-item bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition group" data-category="mineria">
+          <div class="relative h-60 overflow-hidden bg-navy-950">
+            <img 
+              src="images/21234901-de86-4eef-bc4b-f1a2397f3f89.jpg" 
+              onerror="this.src='https://placehold.co/600x400/0B192C/F59E0B?text=Camion+Minero+Sandvik'"
+              alt="Camión articulado minero Sandvik sobre cama baja" 
+              class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+            />
+            <span class="absolute top-3 left-3 bg-navy-950/85 text-amber-400 text-[11px] font-bold px-3 py-1 rounded-md border border-amber-500/30">
+              MINERÍA SUBTERRÁNEA
+            </span>
+          </div>
+          <div class="p-5">
+            <h3 class="font-bold text-lg text-navy-900">Camión Minero Articulado Sandvik</h3>
+            <p class="text-xs text-slate-500 mt-1 font-medium">
+              <i class="fa-solid fa-truck-moving text-amber-500 mr-1"></i> Tractocamión Kenworth + Cama Baja 4 Ejes
+            </p>
+            <p class="text-sm text-slate-600 mt-3 leading-relaxed">
+              Configuración de cuello desmontable y control de altura crítica por neumáticos de gran diámetro. Trincaje reforzado con cadenas grado 80 y tensores certificados.
+            </p>
+          </div>
+        </article>
+
+        <!-- Card 2: Grúa sobre Orugas Link-Belt en Puerto -->
+        <article class="gallery-item bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition group" data-category="puertos">
+          <div class="relative h-60 overflow-hidden bg-navy-950">
+            <img 
+              src="images/0c28f2c3-f3e4-46bb-abce-31e8dc68e868.jpg" 
+              onerror="this.src='https://placehold.co/600x400/0B192C/F59E0B?text=Grua+Link-Belt+Puerto'"
+              alt="Grúa Link-Belt LS 278H bajo pórtico portuario" 
+              class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+            />
+            <span class="absolute top-3 left-3 bg-navy-950/85 text-amber-400 text-[11px] font-bold px-3 py-1 rounded-md border border-amber-500/30">
+              OPERACIÓN PORTUARIA
+            </span>
+          </div>
+          <div class="p-5">
+            <h3 class="font-bold text-lg text-navy-900">Grúa Celosía Link-Belt LS 278H</h3>
+            <p class="text-xs text-slate-500 mt-1 font-medium">
+              <i class="fa-solid fa-anchor text-amber-500 mr-1"></i> Terminal Marítima • Carga Extrapesada
+            </p>
+            <p class="text-sm text-slate-600 mt-3 leading-relaxed">
+              Posicionamiento y balanceo de centro de gravedad bajo pórtico portuario. Cálculo de distribución de peso por eje para tránsito continuo hacia corredor nacional.
+            </p>
+          </div>
+        </article>
+
+        <!-- Card 3: Unidad Oil & Gas Multi-Eje -->
+        <article class="gallery-item bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition group" data-category="mineria">
+          <div class="relative h-60 overflow-hidden bg-navy-950">
+            <img 
+              src="images/PHOTO-2026-07-04-17-30-18.jpg" 
+              onerror="this.src='https://placehold.co/600x400/0B192C/F59E0B?text=Unidad+Oil+and+Gas'"
+              alt="Unidad autopropulsada de fracturamiento Oil & Gas en convoy" 
+              class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+            />
+            <span class="absolute top-3 left-3 bg-navy-950/85 text-amber-400 text-[11px] font-bold px-3 py-1 rounded-md border border-amber-500/30">
+              OIL & GAS / CONVOY
+            </span>
+          </div>
+          <div class="p-5">
+            <h3 class="font-bold text-lg text-navy-900">Unidad Especial de Servicio Petrolero</h3>
+            <p class="text-xs text-slate-500 mt-1 font-medium">
+              <i class="fa-solid fa-oil-well text-amber-500 mr-1"></i> Voladizo posterior controlado + Señalización
+            </p>
+            <p class="text-sm text-slate-600 mt-3 leading-relaxed">
+              Gestión integral de convoy multivehicular con verificación de gálibos frente a redes eléctricas aéreas y control de barrido en giros urbanos e intermunicipales.
+            </p>
+          </div>
+        </article>
+
+        <!-- Card 4: Variante Ibagué - Armenia -->
+        <article class="gallery-item bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition group" data-category="ruta">
+          <div class="relative h-60 overflow-hidden bg-navy-950">
+            <img 
+              src="images/002e3e9c-9e52-4727-af37-2571194d2b61.jpg" 
+              onerror="this.src='https://placehold.co/600x400/0B192C/F59E0B?text=Variante+Ibague+Armenia'"
+              alt="Escolta vial y cama baja con excavadora Sunward en Variante Ibagué - Armenia" 
+              class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+            />
+            <span class="absolute top-3 left-3 bg-navy-950/85 text-amber-400 text-[11px] font-bold px-3 py-1 rounded-md border border-amber-500/30">
+              CORREDOR CORDILLERA CENTRAL
+            </span>
+          </div>
+          <div class="p-5">
+            <h3 class="font-bold text-lg text-navy-900">Variante Ibagué – Armenia (Tolima)</h3>
+            <p class="text-xs text-slate-500 mt-1 font-medium">
+              <i class="fa-solid fa-mountain text-amber-500 mr-1"></i> Escolta Técnica + Excavadora Hidráulica
+            </p>
+            <p class="text-sm text-slate-600 mt-3 leading-relaxed">
+              Control de pendientes pronunciadas y curvas de radio reducido en paso cordillerano con vehículo escolta reglamentario y protocolo estricto de comunicación en vía.
+            </p>
+          </div>
+        </article>
+
+        <!-- Card 5: Reach Stacker & Huacal Extradimensionado -->
+        <article class="gallery-item bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition group" data-category="puertos">
+          <div class="relative h-60 overflow-hidden bg-navy-950">
+            <img 
+              src="images/manejoportuario.jpg" 
+              onerror="this.src='https://placehold.co/600x400/0B192C/F59E0B?text=Manejo+Portuario+Flat+Rack'"
+              alt="Manipulación de carga extradimensionada sobre Flat Rack en terminal" 
+              class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+            />
+            <span class="absolute top-3 left-3 bg-navy-950/85 text-amber-400 text-[11px] font-bold px-3 py-1 rounded-md border border-amber-500/30">
+              PROJECT CARGO / FLAT RACK
+            </span>
+          </div>
+          <div class="p-5">
+            <h3 class="font-bold text-lg text-navy-900">Izaje y Trincaje sobre Flat Rack 40'</h3>
+            <p class="text-xs text-slate-500 mt-1 font-medium">
+              <i class="fa-solid fa-boxes-stacked text-amber-500 mr-1"></i> Embalaje Industrial de Alto Valor
+            </p>
+            <p class="text-sm text-slate-600 mt-3 leading-relaxed">
+              Inspección de puntos de izaje, centro de gravedad marcado y sujeción con eslingas de poliéster de alta tenacidad previo al despacho terrestre.
+            </p>
+          </div>
+        </article>
+
+        <!-- Card 6: Escolta Policial Variante Mamonal Gambote -->
+        <article class="gallery-item bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition group" data-category="ruta">
+          <div class="relative h-60 overflow-hidden bg-navy-950">
+            <img 
+              src="images/barcoMamonal.jpg" 
+              onerror="this.src='https://placehold.co/600x400/0B192C/F59E0B?text=Mamonal+Gambote+Bolivar'"
+              alt="Acompañamiento DITRA y escoltas en Variante Mamonal Gambote Bolívar" 
+              class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+            />
+            <span class="absolute top-3 left-3 bg-navy-950/85 text-amber-400 text-[11px] font-bold px-3 py-1 rounded-md border border-amber-500/30">
+              MAMONAL – GAMBOTE (BOLÍVAR)
+            </span>
+          </div>
+          <div class="p-5">
+            <h3 class="font-bold text-lg text-navy-900">Plan de Manejo de Tránsito (PMT)</h3>
+            <p class="text-xs text-slate-500 mt-1 font-medium">
+              <i class="fa-solid fa-shield text-amber-500 mr-1"></i> Coordinación DITRA + Doble Escolta
+            </p>
+            <p class="text-sm text-slate-600 mt-3 leading-relaxed">
+              Ejecución bajo condiciones climáticas adversas en corredor industrial de Cartagena, garantizando flujo vehicular seguro y cumplimiento total de horarios autorizados.
+            </p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 5. PILAR A: CONSULTORÍA B2B & INGENIERÍA DE RUTA                      -->
+  <!-- ===================================================================== -->
+  <section id="servicios" class="py-16 lg:py-24 bg-navy-900 blueprint-grid text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mb-12">
+        <span class="text-xs font-extrabold uppercase tracking-widest text-amber-400">Soluciones Corporativas B2B</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">
+          Consultoría Técnica y Auditoría Operativa para Empresas y Proyectos
+        </h2>
+        <p class="text-slate-300 mt-3 text-base">
+          Blinda tus contratos, reduce tiempos muertos en puerto o carretera y protege tus equipos con acompañamiento directo de un especialista senior.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Servicio 1 -->
+        <div class="glass-card rounded-2xl p-6 flex flex-col justify-between hover:border-amber-500/60 transition">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-amber-500/15 border border-amber-500/40 flex items-center justify-center text-amber-400 text-xl mb-5">
+              <i class="fa-solid fa-route"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">Estudios de Ruta (Route Surveys)</h3>
+            <p class="text-sm text-slate-300 leading-relaxed mb-4">
+              Levantamiento técnico en campo de gálibos verticales, anchos útiles, radios de giro, resistencia de puentes y puntos críticos antes de movilizar el convoy.
+            </p>
+          </div>
+          <button onclick="openBookingModal('Estudio de Ruta (Route Survey)')" class="text-amber-400 hover:text-amber-300 text-sm font-bold flex items-center gap-1.5 cursor-pointer">
+            Cotizar Route Survey <i class="fa-solid fa-arrow-right text-xs"></i>
+          </button>
+        </div>
+
+        <!-- Servicio 2 -->
+        <div class="glass-card rounded-2xl p-6 flex flex-col justify-between hover:border-amber-500/60 transition">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-amber-500/15 border border-amber-500/40 flex items-center justify-center text-amber-400 text-xl mb-5">
+              <i class="fa-solid fa-file-shield"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">Permisos y Regulación Vial</h3>
+            <p class="text-sm text-slate-300 leading-relaxed mb-4">
+              Estructuración documental y técnica ante MinTransporte, Invías, ANI y autoridades fronterizas LATAM para evitar rechazos y demoras costosas.
+            </p>
+          </div>
+          <button onclick="openBookingModal('Asesoría en Permisos Invías / LATAM')" class="text-amber-400 hover:text-amber-300 text-sm font-bold flex items-center gap-1.5 cursor-pointer">
+            Solicitar Asesoría <i class="fa-solid fa-arrow-right text-xs"></i>
+          </button>
+        </div>
+
+        <!-- Servicio 3 -->
+        <div class="glass-card rounded-2xl p-6 flex flex-col justify-between hover:border-amber-500/60 transition">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-amber-500/15 border border-amber-500/40 flex items-center justify-center text-amber-400 text-xl mb-5">
+              <i class="fa-solid fa-weight-hanging"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">Auditoría de Estiba y Trincaje</h3>
+            <p class="text-sm text-slate-300 leading-relaxed mb-4">
+              Verificación de selección de cama baja o modular hidráulico, distribución de peso por eje, centro de gravedad y cálculo de amarres certificados.
+            </p>
+          </div>
+          <button onclick="openBookingModal('Auditoría de Estiba y Trincaje')" class="text-amber-400 hover:text-amber-300 text-sm font-bold flex items-center gap-1.5 cursor-pointer">
+            Agendar Auditoría <i class="fa-solid fa-arrow-right text-xs"></i>
+          </button>
+        </div>
+
+        <!-- Servicio 4 -->
+        <div class="glass-card rounded-2xl p-6 flex flex-col justify-between hover:border-amber-500/60 transition">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-amber-500/15 border border-amber-500/40 flex items-center justify-center text-amber-400 text-xl mb-5">
+              <i class="fa-solid fa-chart-line"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">Costos y Licitaciones Heavy Haul</h3>
+            <p class="text-sm text-slate-300 leading-relaxed mb-4">
+              Modelación financiera de fletes especiales, identificación de costos ocultos y acompañamiento técnico para ganar licitaciones con margen real.
+            </p>
+          </div>
+          <button onclick="openBookingModal('Estructuración de Costos / Licitación')" class="text-amber-400 hover:text-amber-300 text-sm font-bold flex items-center gap-1.5 cursor-pointer">
+            Consultar Servicio <i class="fa-solid fa-arrow-right text-xs"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 5B. PILAR B: TALLER PRÁCTICO EN VIVO + PRICING TIERS                  -->
+  <!-- ===================================================================== -->
+  <section id="taller" class="py-16 lg:py-24 bg-slate-50 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Encabezado del Taller -->
+      <div class="text-center max-w-4xl mx-auto mb-14">
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500 text-navy-950 text-xs font-extrabold uppercase tracking-wider mb-3">
+          <i class="fa-solid fa-tower-broadcast"></i> Programa Intensivo en Vivo • Cupos Limitados
+        </span>
+        <h2 class="text-3xl sm:text-4xl lg:text-[40px] font-extrabold text-navy-900 leading-tight">
+          Taller: Planificación Segura y Rentable de Carga Extradimensionada y Extrapesada en Colombia y LATAM
+        </h2>
+        <p class="text-slate-600 mt-4 text-base sm:text-lg">
+          4 horas prácticas en 2 sesiones en vivo vía Zoom + Plantillas operativas + Grabación completa. Diseñado para jefes de tráfico, coordinadores logísticos, ingenieros de proyectos y dueños de flota.
+        </p>
+      </div>
+
+      <!-- Temario en 4 Módulos + Bonos -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-16">
+        
+        <!-- Módulos del Temario (7 cols) -->
+        <div class="lg:col-span-7 space-y-4">
+          <h3 class="text-xl font-extrabold text-navy-900 flex items-center gap-2 mb-4">
+            <i class="fa-solid fa-layer-group text-amber-500"></i> Estructura del Programa (4 Módulos Prácticos)
+          </h3>
+
+          <!-- Módulo 1 -->
+          <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+            <div class="flex items-center justify-between mb-1">
+              <span class="text-xs font-extrabold uppercase text-amber-600">Sesión 1 • Módulo 1 (50 min)</span>
+              <span class="text-xs bg-slate-100 text-slate-700 px-2.5 py-0.5 rounded font-semibold">Normativa</span>
+            </div>
+            <h4 class="font-bold text-navy-900 text-base">Regulación Vial y Gestión de Permisos sin Retrasos</h4>
+            <p class="text-sm text-slate-600 mt-1">
+              Diferencias entre carga indivisible, extradimensionada y extrapesada. Resolución 4959 MinTransporte, lineamientos Invías/ANI, corredores LATAM, pólizas RCE y escoltas.
+            </p>
+          </div>
+
+          <!-- Módulo 2 -->
+          <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+            <div class="flex items-center justify-between mb-1">
+              <span class="text-xs font-extrabold uppercase text-amber-600">Sesión 1 • Módulo 2 (70 min)</span>
+              <span class="text-xs bg-slate-100 text-slate-700 px-2.5 py-0.5 rounded font-semibold">Ingeniería</span>
+            </div>
+            <h4 class="font-bold text-navy-900 text-base">Selección de Equipos, Distribución de Peso y Trincaje</h4>
+            <p class="text-sm text-slate-600 mt-1">
+              Cama baja vs. cuello desmontable vs. modulares hidráulicos. Cálculo práctico de peso por eje, centro de gravedad y ángulos de amarre para evitar sanciones y siniestros.
+            </p>
+          </div>
+
+          <!-- Módulo 3 -->
+          <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+            <div class="flex items-center justify-between mb-1">
+              <span class="text-xs font-extrabold uppercase text-amber-600">Sesión 2 • Módulo 3 (70 min)</span>
+              <span class="text-xs bg-slate-100 text-slate-700 px-2.5 py-0.5 rounded font-semibold">Ruta & Seguridad</span>
+            </div>
+            <h4 class="font-bold text-navy-900 text-base">Estudios de Ruta (Route Survey) y Maniobras Críticas</h4>
+            <p class="text-sm text-slate-600 mt-1">
+              Levantamiento de gálibos, radios de giro y puentes. Protocolos de convoy entre operador, escoltas y DITRA. Análisis forense de 3 casos reales en carretera.
+            </p>
+          </div>
+
+          <!-- Módulo 4 -->
+          <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+            <div class="flex items-center justify-between mb-1">
+              <span class="text-xs font-extrabold uppercase text-amber-600">Sesión 2 • Módulo 4 (50 min)</span>
+              <span class="text-xs bg-slate-100 text-slate-700 px-2.5 py-0.5 rounded font-semibold">Rentabilidad</span>
+            </div>
+            <h4 class="font-bold text-navy-900 text-base">Estructura de Costos y Cotización del Flete Especial</h4>
+            <p class="text-sm text-slate-600 mt-1">
+              Costos ocultos (tiempos muertos, permisos, escoltas, desmontaje de redes). Cómo cotizar con criterio técnico + 20 min de revisión de casos de los asistentes.
+            </p>
+          </div>
+        </div>
+
+        <!-- Bonos Incluidos (5 cols) -->
+        <div class="lg:col-span-5 bg-navy-900 text-white rounded-2xl p-6 sm:p-8 shadow-xl flex flex-col justify-between">
+          <div>
+            <span class="inline-block px-3 py-1 bg-amber-500/20 text-amber-400 border border-amber-500/40 rounded-md text-xs font-bold uppercase mb-3">
+              Herramientas Incluidas
+            </span>
+            <h3 class="text-2xl font-extrabold text-white mb-5">
+              4 Bonos Descargables para Aplicar Desde el Día 1
+            </h3>
+            <ul class="space-y-4 text-sm">
+              <li class="flex items-start gap-3 bg-navy-950/60 p-3.5 rounded-xl border border-slate-800">
+                <i class="fa-solid fa-clipboard-check text-amber-400 text-lg mt-0.5"></i>
+                <div>
+                  <strong class="text-white block">Bono 1: Checklist Preoperacional y Documental</strong>
+                  <span class="text-slate-400 text-xs">Auditoría completa antes de despachar carga indivisible.</span>
+                </div>
+              </li>
+              <li class="flex items-start gap-3 bg-navy-950/60 p-3.5 rounded-xl border border-slate-800">
+                <i class="fa-solid fa-file-excel text-emerald-400 text-lg mt-0.5"></i>
+                <div>
+                  <strong class="text-white block">Bono 2: Plantilla Excel Distribución de Peso por Eje</strong>
+                  <span class="text-slate-400 text-xs">Simulador rápido de balance de cargas y centro de gravedad.</span>
+                </div>
+              </li>
+              <li class="flex items-start gap-3 bg-navy-950/60 p-3.5 rounded-xl border border-slate-800">
+                <i class="fa-solid fa-map-location-dot text-amber-400 text-lg mt-0.5"></i>
+                <div>
+                  <strong class="text-white block">Bono 3: Matriz de Puntos Críticos Route Survey</strong>
+                  <span class="text-slate-400 text-xs">Formato profesional para levantamiento de riesgos en vía.</span>
+                </div>
+              </li>
+              <li class="flex items-start gap-3 bg-navy-950/60 p-3.5 rounded-xl border border-slate-800">
+                <i class="fa-solid fa-video text-sky-400 text-lg mt-0.5"></i>
+                <div>
+                  <strong class="text-white block">Bono 4: Grabación HD + Certificado Oficial</strong>
+                  <span class="text-slate-400 text-xs">Acceso ilimitado a las sesiones y certificado firmado por Elkin Moreno.</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-slate-800 text-xs text-slate-300 flex items-center justify-between">
+            <span><i class="fa-regular fa-clock text-amber-400 mr-1"></i> Horario: 7:00 p.m. - 9:00 p.m. (COL)</span>
+            <span class="font-bold text-amber-400">Vía Zoom Live</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- TABLA DE PRECIOS / PLANES DE INSCRIPCIÓN -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+        
+        <!-- Plan 1: Preventa Fundadores (Destacado) -->
+        <div class="relative bg-navy-900 text-white rounded-2xl p-7 border-2 border-amber-500 shadow-2xl flex flex-col justify-between transform md:-translate-y-2">
+          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-amber-500 text-navy-950 text-xs font-extrabold uppercase px-4 py-1 rounded-full shadow">
+            🔥 Preventa Fundadores (10 Cupos)
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-white mt-2">Acceso Individual Preventa</h3>
+            <p class="text-xs text-slate-400 mt-1">Tarifa preferencial para los primeros 10 inscritos</p>
+            <div class="my-6">
+              <div class="flex items-baseline gap-2">
+                <span class="font-tech text-5xl font-bold text-amber-400">$67</span>
+                <span class="text-sm font-bold text-slate-300">USD</span>
+              </div>
+              <div class="text-xs text-slate-400 mt-1">Aprox. <strong class="text-white">$280.000 COP</strong> (Pago único)</div>
+            </div>
+            <ul class="space-y-2.5 text-sm text-slate-200 mb-8">
+              <li><i class="fa-solid fa-check text-amber-400 mr-2"></i> 4 horas en vivo (2 sesiones) + Q&A</li>
+              <li><i class="fa-solid fa-check text-amber-400 mr-2"></i> Los 4 Bonos y Plantillas Excel</li>
+              <li><i class="fa-solid fa-check text-amber-400 mr-2"></i> Grabación completa de por vida</li>
+              <li><i class="fa-solid fa-check text-amber-400 mr-2"></i> Certificado de participación</li>
+            </ul>
+          </div>
+          <button onclick="openWorkshopModal('Preventa Fundadores — $67 USD ($280.000 COP)')" class="w-full bg-amber-500 hover:bg-amber-400 text-navy-950 font-extrabold py-3.5 px-5 rounded-xl shadow-lg transition cursor-pointer">
+            Asegurar Cupo Preventa ($67 USD)
+          </button>
+        </div>
+
+        <!-- Plan 2: Precio Regular -->
+        <div class="bg-white rounded-2xl p-7 border border-slate-200 shadow-md flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-bold uppercase text-slate-500">Inscripción Estándar</span>
+            <h3 class="text-xl font-bold text-navy-900 mt-1">Acceso Individual General</h3>
+            <p class="text-xs text-slate-500 mt-1">Tarifa regular una vez agotada la preventa</p>
+            <div class="my-6">
+              <div class="flex items-baseline gap-2">
+                <span class="font-tech text-5xl font-bold text-navy-900">$97</span>
+                <span class="text-sm font-bold text-slate-600">USD</span>
+              </div>
+              <div class="text-xs text-slate-500 mt-1">Aprox. <strong class="text-navy-900">$410.000 COP</strong> (Pago único)</div>
+            </div>
+            <ul class="space-y-2.5 text-sm text-slate-600 mb-8">
+              <li><i class="fa-solid fa-check text-navy-900 mr-2"></i> 4 horas en vivo (2 sesiones) + Q&A</li>
+              <li><i class="fa-solid fa-check text-navy-900 mr-2"></i> Los 4 Bonos y Plantillas Excel</li>
+              <li><i class="fa-solid fa-check text-navy-900 mr-2"></i> Grabación completa de por vida</li>
+              <li><i class="fa-solid fa-check text-navy-900 mr-2"></i> Certificado de participación</li>
+            </ul>
+          </div>
+          <button onclick="openWorkshopModal('Acceso General — $97 USD ($410.000 COP)')" class="w-full bg-navy-900 hover:bg-navy-800 text-white font-bold py-3.5 px-5 rounded-xl transition cursor-pointer">
+            Reservar Cupo General ($97 USD)
+          </button>
+        </div>
+
+        <!-- Plan 3: Paquete Corporativo -->
+        <div class="bg-white rounded-2xl p-7 border border-slate-200 shadow-md flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-bold uppercase text-amber-600">Empresas & Flotas (Ahorro $51 USD)</span>
+            <h3 class="text-xl font-bold text-navy-900 mt-1">Paquete Corporativo (3 Cupos)</h3>
+            <p class="text-xs text-slate-500 mt-1">Ideal para alinear tráfico, operaciones y escoltas</p>
+            <div class="my-6">
+              <div class="flex items-baseline gap-2">
+                <span class="font-tech text-5xl font-bold text-navy-900">$240</span>
+                <span class="text-sm font-bold text-slate-600">USD</span>
+              </div>
+              <div class="text-xs text-slate-500 mt-1">Aprox. <strong class="text-navy-900">$1.000.000 COP</strong> (3 participantes)</div>
+            </div>
+            <ul class="space-y-2.5 text-sm text-slate-600 mb-8">
+              <li><i class="fa-solid fa-check text-amber-500 mr-2"></i> 3 accesos en vivo + 3 certificados</li>
+              <li><i class="fa-solid fa-check text-amber-500 mr-2"></i> Todos los bonos y plantillas para el equipo</li>
+              <li><i class="fa-solid fa-check text-amber-500 mr-2"></i> Prioridad en revisión de caso de la empresa</li>
+              <li><i class="fa-solid fa-check text-amber-500 mr-2"></i> Opción de cuenta de cobro / facturación</li>
+            </ul>
+          </div>
+          <button onclick="openWorkshopModal('Paquete Corporativo 3 Cupos — $240 USD ($1.000.000 COP)')" class="w-full bg-slate-900 hover:bg-slate-800 text-amber-400 border border-slate-800 font-bold py-3.5 px-5 rounded-xl transition cursor-pointer">
+            Solicitar Paquete Empresa ($240 USD)
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 6. MOTOR DE VIRALIZACIÓN Y CAPTURA DE LEADS (CHECKLIST GRATUITO)      -->
+  <!-- ===================================================================== -->
+  <section id="riesgo" class="py-16 lg:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-gradient-to-br from-navy-950 via-navy-900 to-steel-900 rounded-3xl p-6 sm:p-10 lg:p-12 text-white shadow-2xl border border-slate-800 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <!-- Diagnóstico Interactivo de Riesgo (7 cols) -->
+        <div class="lg:col-span-7 space-y-5">
+          <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/20 text-amber-400 text-xs font-bold uppercase">
+            <i class="fa-solid fa-file-pdf"></i> Recurso Descargable Gratuito
+          </span>
+          <h2 class="text-2xl sm:text-4xl font-extrabold leading-tight">
+            Descarga el <span class="text-amber-400">Checklist Preoperacional de Carga Indivisible</span> y Audita tu Operación
+          </h2>
+          <p class="text-slate-300 text-sm sm:text-base">
+            Marca los puntos que ya controlas hoy en tu empresa para medir tu nivel de blindaje operativo y recibe gratis la guía PDF completa en tu correo y WhatsApp:
+          </p>
+
+          <!-- Mini Autodiagnóstico Interactivo -->
+          <div class="space-y-2.5 bg-navy-950/70 p-4 rounded-xl border border-slate-800 text-sm">
+            <label class="flex items-center gap-3 cursor-pointer">
+              <input type="checkbox" class="risk-check w-4 h-4 accent-amber-500 rounded" onchange="updateRiskScore()" checked />
+              <span>Verificamos resolución Invías / ANI vigente y horarios autorizados antes de enganchar.</span>
+            </label>
+            <label class="flex items-center gap-3 cursor-pointer">
+              <input type="checkbox" class="risk-check w-4 h-4 accent-amber-500 rounded" onchange="updateRiskScore()" />
+              <span>Calculamos distribución de peso por eje y centro de gravedad (no solo peso total).</span>
+            </label>
+            <label class="flex items-center gap-3 cursor-pointer">
+              <input type="checkbox" class="risk-check w-4 h-4 accent-amber-500 rounded" onchange="updateRiskScore()" />
+              <span>Realizamos reconocimiento de gálibos y radios de giro en puntos críticos de la ruta.</span>
+            </label>
+            <label class="flex items-center gap-3 cursor-pointer">
+              <input type="checkbox" class="risk-check w-4 h-4 accent-amber-500 rounded" onchange="updateRiskScore()" />
+              <span>Auditamos ángulos de amarre (trincaje) y capacidad de cadenas/eslingas antes de salir.</span>
+            </label>
+            <div class="pt-2 border-t border-slate-800 flex items-center justify-between text-xs">
+              <span class="text-slate-400">Nivel de Blindaje Actual:</span>
+              <span id="risk-score-label" class="font-bold text-amber-400">25% — Riesgo Alto de Sobre-costos o Sanción</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulario de Captura de Lead B2B (5 cols) -->
+        <div class="lg:col-span-5 bg-white text-navy-900 rounded-2xl p-6 sm:p-7 shadow-xl">
+          <h3 class="font-extrabold text-xl text-navy-900 mb-1">Recibir Checklist en PDF</h3>
+          <p class="text-xs text-slate-500 mb-4">Completa tus datos para habilitar la descarga inmediata.</p>
+
+          <form id="lead-magnet-form" onsubmit="handleLeadMagnetSubmit(event)" class="space-y-3.5">
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">Nombre Completo *</label>
+              <input type="text" id="lm-name" required placeholder="Ej. Carlos Mendoza" class="w-full rounded-lg border border-slate-300 px-3.5 py-2.5 text-sm focus:border-amber-500 outline-none" />
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1">Empresa *</label>
+                <input type="text" id="lm-company" required placeholder="Nombre de empresa" class="w-full rounded-lg border border-slate-300 px-3.5 py-2.5 text-sm focus:border-amber-500 outline-none" />
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1">Cargo *</label>
+                <input type="text" id="lm-role" required placeholder="Ej. Jefe de Tráfico" class="w-full rounded-lg border border-slate-300 px-3.5 py-2.5 text-sm focus:border-amber-500 outline-none" />
+              </div>
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">Correo Corporativo / Personal *</label>
+              <input type="email" id="lm-email" required placeholder="correo@empresa.com" class="w-full rounded-lg border border-slate-300 px-3.5 py-2.5 text-sm focus:border-amber-500 outline-none" />
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">WhatsApp (con código país) *</label>
+              <input type="tel" id="lm-phone" required placeholder="+57 300 000 0000" class="w-full rounded-lg border border-slate-300 px-3.5 py-2.5 text-sm focus:border-amber-500 outline-none" />
+            </div>
+
+            <button type="submit" class="w-full bg-amber-500 hover:bg-amber-400 text-navy-950 font-extrabold py-3.5 px-4 rounded-xl shadow-md transition flex items-center justify-center gap-2 cursor-pointer">
+              <i class="fa-solid fa-download"></i>
+              <span>Descargar Checklist Gratis Ahora</span>
+            </button>
+          </form>
+
+          <!-- Estado post-envío -->
+          <div id="lead-magnet-success" class="hidden text-center py-6 space-y-3">
+            <div class="w-12 h-12 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto text-xl">
+              <i class="fa-solid fa-check"></i>
+            </div>
+            <h4 class="font-extrabold text-lg text-navy-900">¡Checklist Desbloqueado!</h4>
+            <p class="text-xs text-slate-600">
+              Hemos preparado tu copia del <strong>Checklist Preoperacional de Carga Indivisible (24 Puntos Críticos)</strong>.
+            </p>
+            <button onclick="downloadChecklistText()" class="w-full bg-navy-900 hover:bg-navy-800 text-amber-400 font-bold py-3 px-4 rounded-xl text-sm transition cursor-pointer">
+              <i class="fa-solid fa-file-arrow-down mr-1.5"></i> Guardar Archivo Checklist (.txt)
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- FOOTER CORPORATIVO & VIRALIZACIÓN EN REDES                            -->
+  <!-- ===================================================================== -->
+  <footer class="bg-navy-950 text-slate-400 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 pb-8 border-b border-slate-800">
+        
+        <div class="md:col-span-5 space-y-4">
+          <div class="flex items-center gap-3">
+            <svg width="40" height="40" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M32 3L58 18V46L32 61L6 46V18L32 3Z" fill="#0B192C" stroke="#F59E0B" stroke-width="2.5"/>
+              <path d="M16 21H29V24.5H20V28.5H27.5V32H20V36H29V39.5H16V21Z" fill="#FFFFFF"/>
+              <path d="M32 21H36.2L40.5 29.5L44.8 21H49V39.5H45V27.8L41.4 34.8H39.6L36 27.8V39.5H32V21Z" fill="#F59E0B"/>
+              <path d="M14 44.5H22L25 46.5H43L46 44.5H50V47H45.5L42.5 49H24.5L21.5 47H14V44.5Z" fill="#F59E0B"/>
+            </svg>
+            <div>
+              <span class="font-tech font-bold text-xl text-white tracking-wider">ELKIN <span class="text-amber-500">MORENO</span></span>
+              <span class="block text-[10px] tracking-widest uppercase text-slate-400">Heavy Haul & Project Cargo LATAM</span>
+            </div>
+          </div>
+          <p class="text-sm leading-relaxed">
+            Consultoría estratégica, ingeniería de ruta, gestión normativa y formación ejecutiva en transporte de carga extradimensionada y extrapesada en Colombia y Latinoamérica.
+          </p>
+          <!-- Botón para compartir y viralizar -->
+          <div class="flex flex-wrap gap-2 pt-2">
+            <button onclick="copyShareLink()" class="px-3.5 py-2 rounded-lg bg-navy-900 hover:bg-navy-800 border border-slate-700 text-xs font-semibold text-white flex items-center gap-2 transition cursor-pointer">
+              <i class="fa-solid fa-share-nodes text-amber-400"></i>
+              <span id="copy-link-text">Compartir con mi equipo logístico</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="md:col-span-3 space-y-2 text-sm">
+          <h4 class="font-bold text-white uppercase tracking-wider text-xs mb-3">Navegación</h4>
+          <ul class="space-y-2">
+            <li><a href="#servicios" class="hover:text-amber-400 transition">Consultoría B2B</a></li>
+            <li><a href="#taller" class="hover:text-amber-400 transition">Taller Especializado en Vivo</a></li>
+            <li><a href="#operaciones" class="hover:text-amber-400 transition">Operaciones Reales</a></li>
+            <li><a href="#calculadora" class="hover:text-amber-400 transition">Simulador Res. 4959</a></li>
+          </ul>
+        </div>
+
+        <div class="md:col-span-4 space-y-3 text-sm">
+          <h4 class="font-bold text-white uppercase tracking-wider text-xs mb-3">Contacto Directo</h4>
+          <p><i class="fa-solid fa-location-dot text-amber-500 mr-2"></i> Bogotá D.C., Colombia • Cobertura LATAM</p>
+          <p><i class="fa-solid fa-envelope text-amber-500 mr-2"></i> contacto@elkinmorenoheavyhaul.com</p>
+          <p><i class="fa-brands fa-whatsapp text-emerald-400 mr-2"></i> Atención Comercial & Corporativa</p>
+          <div class="pt-2">
+            <button onclick="openBookingModal('Contacto General desde Footer')" class="bg-amber-500 hover:bg-amber-400 text-navy-950 font-bold text-xs px-4 py-2.5 rounded-lg transition cursor-pointer">
+              Iniciar Conversación Directa
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row justify-between items-center text-xs gap-4">
+        <p>© 2026 Elkin Moreno — Heavy Haul & Project Cargo LATAM. Todos los derechos reservados.</p>
+        <p class="text-slate-500">Ingeniería • Regulación • Seguridad Vial</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================================================================== -->
+  <!-- BOTÓN FLOTANTE STICKY WHATSAPP BUSINESS                               -->
+  <!-- ===================================================================== -->
+  <button onclick="openBookingModal('Consulta Rápida vía WhatsApp')" aria-label="Contactar por WhatsApp" class="fixed bottom-5 right-5 z-40 bg-emerald-600 hover:bg-emerald-500 text-white px-4 py-3.5 rounded-full shadow-2xl flex items-center gap-2.5 font-bold text-sm transition transform hover:scale-105 cursor-pointer border-2 border-white/20">
+    <i class="fa-brands fa-whatsapp text-2xl"></i>
+    <span class="hidden sm:inline">Hablar con Elkin Moreno</span>
+  </button>
+
+  <!-- ===================================================================== -->
+  <!-- MODAL INTERACTIVO DE RESERVA / CONSULTORÍA / INSCRIPCIÓN TALLER       -->
+  <!-- ===================================================================== -->
+  <div id="booking-modal" class="fixed inset-0 z-50 hidden bg-navy-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-lg w-full overflow-hidden shadow-2xl border border-slate-200 animate-fade-in">
+      <div class="bg-navy-900 p-5 text-white flex items-center justify-between border-b border-slate-800">
+        <div>
+          <span class="text-[11px] font-bold uppercase tracking-wider text-amber-400">Atención Directa • Elkin Moreno</span>
+          <h3 id="modal-title" class="text-lg font-extrabold text-white mt-0.5">Agendar Consultoría B2B</h3>
+        </div>
+        <button onclick="closeBookingModal()" class="text-slate-400 hover:text-white p-1.5 rounded-lg cursor-pointer">
+          <i class="fa-solid fa-xmark text-xl"></i>
+        </button>
+      </div>
+
+      <form id="modal-form" onsubmit="submitBookingModal(event)" class="p-6 space-y-4">
+        <div>
+          <label class="block text-xs font-bold text-slate-700 mb-1">Servicio o Programa Seleccionado</label>
+          <input type="text" id="modal-service" readonly class="w-full rounded-lg bg-slate-100 border border-slate-300 px-3.5 py-2.5 text-sm font-bold text-navy-900" />
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Tu Nombre *</label>
+            <input type="text" id="modal-name" required placeholder="Nombre y apellido" class="w-full rounded-lg border border-slate-300 px-3.5 py-2.5 text-sm focus:border-amber-500 outline-none" />
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Empresa *</label>
+            <input type="text" id="modal-company" required placeholder="Empresa / Proyecto" class="w-full rounded-lg border border-slate-300 px-3.5 py-2.5 text-sm focus:border-amber-500 outline-none" />
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">WhatsApp *</label>
+            <input type="tel" id="modal-phone" required placeholder="+57 300 000 0000" class="w-full rounded-lg border border-slate-300 px-3.5 py-2.5 text-sm focus:border-amber-500 outline-none" />
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">País de Operación</label>
+            <select id="modal-country" class="w-full rounded-lg border border-slate-300 px-3.5 py-2.5 text-sm bg-white focus:border-amber-500 outline-none">
+              <option value="Colombia">Colombia</option>
+              <option value="Ecuador">Ecuador</option>
+              <option value="Perú">Perú</option>
+              <option value="Chile">Chile</option>
+              <option value="Panamá">Panamá</option>
+              <option value="Otro LATAM">Otro país LATAM</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-slate-700 mb-1">Detalles de tu Carga, Ruta o Requerimiento</label>
+          <textarea id="modal-notes" rows="3" placeholder="Ej. Requerimos estudio de ruta para transformador de 65 Ton desde Cartagena hacia el interior..." class="w-full rounded-lg border border-slate-300 px-3.5 py-2 text-sm focus:border-amber-500 outline-none"></textarea>
+        </div>
+
+        <button type="submit" class="w-full bg-amber-500 hover:bg-amber-400 text-navy-950 font-extrabold py-3.5 px-5 rounded-xl shadow-lg transition flex items-center justify-center gap-2 cursor-pointer">
+          <i class="fa-solid fa-paper-plane"></i>
+          <span>Confirmar Solicitud y Continuar</span>
+        </button>
+      </form>
+
+      <!-- Confirmación visual en el Modal -->
+      <div id="modal-confirmation" class="hidden p-8 text-center space-y-4">
+        <div class="w-16 h-16 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto text-3xl">
+          <i class="fa-solid fa-circle-check"></i>
+        </div>
+        <h4 class="text-2xl font-extrabold text-navy-900">¡Solicitud Registrada!</h4>
+        <p id="modal-confirm-msg" class="text-sm text-slate-600 leading-relaxed"></p>
+        <div class="pt-2 flex flex-col sm:flex-row gap-3 justify-center">
+          <button onclick="closeBookingModal()" class="bg-navy-900 text-white font-bold px-6 py-2.5 rounded-xl text-sm cursor-pointer">
+            Volver a la Página
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- JAVASCRIPT DE INTERACTIVIDAD, SIMULADOR Y GESTIÓN DE LEADS            -->
+  <!-- ===================================================================== -->
+  <script>
+    // 1. Toggle menú móvil
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // 2. Simulador Normativo de Carga Extradimensionada / Extrapesada (Res. 4959)
+    function calculateCargoClass() {
+      const length = parseFloat(document.getElementById('sim-length').value) || 0;
+      const width = parseFloat(document.getElementById('sim-width').value) || 0;
+      const height = parseFloat(document.getElementById('sim-height').value) || 0;
+      const weight = parseFloat(document.getElementById('sim-weight').value) || 0;
+      const indivisible = document.getElementById('sim-indivisible').value;
+
+      const isOverLength = length > 18.5;
+      const isOverWidth = width > 2.6;
+      const isOverHeight = height > 4.4;
+      const isExtradim = isOverLength || isOverWidth || isOverHeight;
+      const isExtraweight = weight > 52;
+
+      const badge = document.getElementById('sim-badge');
+      const title = document.getElementById('sim-title');
+      const escorts = document.getElementById('sim-escorts');
+      const permits = document.getElementById('sim-permits');
+      const alertBox = document.getElementById('sim-alert');
+
+      if (!isExtradim && !isExtraweight) {
+        badge.textContent = 'CARGA NORMAL / ESTÁNDAR';
+        badge.className = 'px-3 py-1 rounded-full text-xs font-extrabold bg-emerald-500 text-navy-950';
+        title.textContent = 'Operación dentro de límites ordinarios nacionales';
+        escorts.textContent = 'No requiere vehículos escolta obligatorios por dimensiones.';
+        permits.textContent = 'Manifiesto de carga ordinario y cumplimiento de pesos por eje vigentes.';
+        alertBox.textContent = 'Verifica distribución uniforme de peso por eje para evitar comparendos en estaciones de pesaje.';
+        return;
+      }
+
+      if (indivisible === 'no') {
+        badge.textContent = 'ALERTA: CARGA DIVISIBLE';
+        badge.className = 'px-3 py-1 rounded-full text-xs font-extrabold bg-red-500 text-white';
+        title.textContent = 'Restricción Normativa: La carga divisible debe fraccionarse';
+        escorts.textContent = 'No autorizable bajo régimen de permiso de carga indivisible.';
+        permits.textContent = 'La Resolución 4959 solo otorga permisos especiales a cargas indivisibles.';
+        alertBox.textContent = 'Debes ajustar el embalaje o fraccionar los bultos para cumplir límites ordinarios.';
+        return;
+      }
+
+      // Clasificación combinada
+      if (isExtradim && isExtraweight) {
+        badge.textContent = 'EXTRADIMENSIONADA + EXTRAPESADA';
+        badge.className = 'px-3 py-1 rounded-full text-xs font-extrabold bg-amber-500 text-navy-950';
+        title.textContent = 'Permiso Especial Invías / ANI + Estudio Técnico de Puentes';
+      } else if (isExtradim) {
+        badge.textContent = 'CARGA EXTRADIMENSIONADA';
+        badge.className = 'px-3 py-1 rounded-full text-xs font-extrabold bg-amber-500 text-navy-950';
+        title.textContent = 'Requiere Permiso de Carga Extradimensionada y Señalización';
+      } else {
+        badge.textContent = 'CARGA EXTRAPESADA (>52 TON)';
+        badge.className = 'px-3 py-1 rounded-full text-xs font-extrabold bg-orange-500 text-white';
+        title.textContent = 'Requiere Configuración Multi-Eje y Estudio de Obras de Arte';
+      }
+
+      // Escoltas según ancho / largo
+      if (width > 3.6 || length > 28) {
+        escorts.textContent = 'Mínimo 2 Vehículos Escolta (adelante y atrás) + Acompañamiento Policía de Tránsito (DITRA) según corredor.';
+      } else if (width > 3.0 || isOverLength) {
+        escorts.textContent = '2 Vehículos Escolta (1 adelante + 1 atrás) con avisos reglamentarios "PELIGRO CARGA LARGA Y ANCHA".';
+      } else {
+        escorts.textContent = '1 a 2 Vehículos Escolta según condiciones geométricas de la vía y resolución autorizada.';
+      }
+
+      permits.textContent = isExtraweight
+        ? 'Trámite ante Invías / Concesiones ANI + Póliza RCE + Configuración modular/cama baja con reparto certificado por eje.'
+        : 'Registro electrónico o resolución Invías / ANI + Póliza de Responsabilidad Civil Extracontractual (RCE) + Plan de Seguridad Vial.';
+
+      let alerts = [];
+      if (height > 4.4) alerts.push(`Altura de ${height.toFixed(1)}m exige verificación estricta de puentes y redes aéreas.`);
+      if (width > 3.3) alerts.push(`Ancho de ${width.toFixed(1)}m requiere control de pasos estrechos y peajes.`);
+      if (weight > 52) alerts.push(`Peso de ${weight} Ton exige validación de capacidad estructural de puentes.`);
+      alertBox.textContent = alerts.join(' ') || 'Validar restricciones horarias nocturnas y festivos en corredores nacionales.';
+    }
+
+    function resetSimulator() {
+      document.getElementById('sim-length').value = 22.5;
+      document.getElementById('sim-width').value = 3.4;
+      document.getElementById('sim-height').value = 4.5;
+      document.getElementById('sim-weight').value = 58;
+      document.getElementById('sim-indivisible').value = 'yes';
+      calculateCargoClass();
+    }
+
+    function sendSimulatorLead() {
+      const l = document.getElementById('sim-length').value;
+      const w = document.getElementById('sim-width').value;
+      const h = document.getElementById('sim-height').value;
+      const t = document.getElementById('sim-weight').value;
+      const summary = `Validación Técnica Operación: Largo ${l}m | Ancho ${w}m | Alto ${h}m | Peso ${t} Ton.`;
+      openBookingModal('Validación Normativa y Ruta', summary);
+    }
+
+    // 3. Filtro de Galería de Operaciones Reales
+    function filterGallery(category, btnElement) {
+      const items = document.querySelectorAll('.gallery-item');
+      const buttons = document.querySelectorAll('.filter-btn');
+
+      buttons.forEach(btn => {
+        btn.classList.remove('bg-navy-900', 'text-white');
+        btn.classList.add('bg-slate-100', 'text-slate-700');
+      });
+      btnElement.classList.remove('bg-slate-100', 'text-slate-700');
+      btnElement.classList.add('bg-navy-900', 'text-white');
+
+      items.forEach(item => {
+        if (category === 'all' || item.dataset.category === category) {
+          item.classList.remove('hidden');
+        } else {
+          item.classList.add('hidden');
+        }
+      });
+    }
+
+    // 4. Autodiagnóstico de Riesgo Operativo
+    function updateRiskScore() {
+      const checks = document.querySelectorAll('.risk-check');
+      let checkedCount = 0;
+      checks.forEach(c => { if (c.checked) checkedCount++; });
+      const percent = checkedCount * 25;
+      const label = document.getElementById('risk-score-label');
+
+      if (percent <= 25) {
+        label.textContent = `${percent}% — Riesgo Crítico de Sanciones o Sobrecostos`;
+        label.className = 'font-bold text-red-400';
+      } else if (percent <= 75) {
+        label.textContent = `${percent}% — Control Parcial (Vulnerable en Ruta)`;
+        label.className = 'font-bold text-amber-400';
+      } else {
+        label.textContent = `${percent}% — Buen Estándar (Descarga la guía para auditar detalles)`;
+        label.className = 'font-bold text-emerald-400';
+      }
+    }
+
+    // 5. Lead Magnet Form + Descarga real del Checklist
+    function handleLeadMagnetSubmit(e) {
+      e.preventDefault();
+      document.getElementById('lead-magnet-form').classList.add('hidden');
+      document.getElementById('lead-magnet-success').classList.remove('hidden');
+      downloadChecklistText();
+    }
+
+    function downloadChecklistText() {
+      const name = document.getElementById('lm-name').value || 'Especialista';
+      const content = `====================================================================
+ELKIN MORENO — HEAVY HAUL & PROJECT CARGO LATAM
+CHECKLIST PREOPERACIONAL Y DOCUMENTAL DE CARGA INDIVISIBLE
+Preparado para: ${name}
+====================================================================
+
+1. VERIFICACIÓN DOCUMENTAL Y NORMATIVA (COLOMBIA / LATAM)
+[ ] Resolución de permiso vigente (Invías / ANI / Autoridad Vial).
+[ ] Coincidencia exacta de placas (cabezote y semirremolque/modular) en el permiso.
+[ ] Dimensiones y peso bruto vehicular dentro de los márgenes autorizados.
+[ ] Póliza de Responsabilidad Civil Extracontractual (RCE) vigente y endosada.
+[ ] Plan de Manejo de Tránsito (PMT) y horarios de circulación verificados.
+
+2. CONFIGURACIÓN VEHICULAR Y ESTIBA
+[ ] Selección adecuada de equipo (cama baja, cuello desmontable, modular hidráulico).
+[ ] Cálculo de distribución de peso por eje dentro de capacidad técnica y puentes.
+[ ] Centro de gravedad identificado, marcado y alineado longitudinal/transversalmente.
+[ ] Presión de neumáticos, sistema de frenos ABS/EBS y suspensión hidráulica revisados.
+
+3. AMARRE Y SUJECIÓN (TRINCAJE)
+[ ] Cadenas grado 80/100 y tensores certificados sin fisuras ni elongación.
+[ ] Ángulos de amarre verificados para contener fuerzas de frenado (0.8g) y laterales (0.5g).
+[ ] Protección de cantos vivos con esquineros de caucho o acero.
+
+4. RUTA Y ESCOLTAS TÉCNICAS
+[ ] Gálibos verticales (puentes, redes eléctricas, telecomunicaciones) auditados.
+[ ] Radios de giro y pasos estrechos verificados en Route Survey.
+[ ] Vehículos escolta con avisos reglamentarios, balizas y radios de comunicación probados.
+
+--------------------------------------------------------------------
+¿Necesitas auditar una operación o capacitar a tu equipo?
+Contacto: Elkin Moreno — Heavy Haul & Project Cargo LATAM
+====================================================================`;
+
+      const blob = new Blob([content], { type: 'text/plain;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'Checklist_Carga_Extradimensionada_Elkin_Moreno.txt';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    }
+
+    // 6. Modales de Reserva (Consultoría B2B y Taller)
+    function openBookingModal(serviceTitle, prefillNotes = '') {
+      document.getElementById('modal-title').textContent = 'Agendar Consultoría / Servicio B2B';
+      document.getElementById('modal-service').value = serviceTitle;
+      document.getElementById('modal-notes').value = prefillNotes;
+      document.getElementById('modal-form').classList.remove('hidden');
+      document.getElementById('modal-confirmation').classList.add('hidden');
+      document.getElementById('booking-modal').classList.remove('hidden');
+    }
+
+    function openWorkshopModal(planTitle) {
+      document.getElementById('modal-title').textContent = 'Inscripción al Taller en Vivo';
+      document.getElementById('modal-service').value = `Taller Heavy Haul — ${planTitle}`;
+      document.getElementById('modal-notes').value = 'Solicito enlace de pago y fechas disponibles para el taller en vivo.';
+      document.getElementById('modal-form').classList.remove('hidden');
+      document.getElementById('modal-confirmation').classList.add('hidden');
+      document.getElementById('booking-modal').classList.remove('hidden');
+    }
+
+    function closeBookingModal() {
+      document.getElementById('booking-modal').classList.add('hidden');
+    }
+
+    function submitBookingModal(e) {
+      e.preventDefault();
+      const name = document.getElementById('modal-name').value;
+      const service = document.getElementById('modal-service').value;
+      const phone = document.getElementById('modal-phone').value;
+
+      document.getElementById('modal-form').classList.add('hidden');
+      document.getElementById('modal-confirmation').classList.remove('hidden');
+      document.getElementById('modal-confirm-msg').innerHTML = `
+        Gracias, <strong>${name}</strong>. Hemos recibido tu solicitud para <strong>${service}</strong>.<br/><br/>
+        El equipo de <strong>Elkin Moreno — Heavy Haul LATAM</strong> se comunicará contigo al <strong>${phone}</strong> en menos de 2 horas hábiles con los detalles y enlace correspondiente.
+      `;
+    }
+
+    // 7. Copiar enlace para viralización
+    function copyShareLink() {
+      const dummy = document.createElement('input');
+      dummy.value = window.location.href;
+      document.body.appendChild(dummy);
+      dummy.select();
+      document.execCommand('copy');
+      document.body.removeChild(dummy);
+
+      const label = document.getElementById('copy-link-text');
+      label.textContent = '¡Enlace copiado! Compártelo en LinkedIn o WhatsApp';
+      setTimeout(() => {
+        label.textContent = 'Compartir con mi equipo logístico';
+      }, 3000);
+    }
+
+    // Inicializar simulador al cargar
+    window.addEventListener('DOMContentLoaded', () => {
+      calculateCargoClass();
+    });
+  </script>
+</body>
+</html>
